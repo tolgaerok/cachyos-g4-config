@@ -1,0 +1,23 @@
+logrotate state -- version 2
+"/var/log/samba/smbd.log" 2026-3-15-21:49:32
+"/var/log/cups/page_log" 2026-3-15-21:49:32
+"/var/log/samba/nmbd.log" 2026-3-15-21:49:32
+"/var/log/samba/192.168.122.1.log" 2026-3-10-5:0:0
+"/var/log/cups/error_log" 2026-3-15-21:49:32
+"/var/log/boot.log" 2026-3-17-19:54:0
+"/var/log/samba/log.smbd" 2026-3-10-5:0:0
+"/var/log/lircd" 2026-3-10-5:0:0
+"/var/log/cups/access_log" 2026-3-15-21:49:32
+"/var/log/samba/cachyos.log" 2026-3-10-5:0:0
+"/var/log/libvirt/lxc/*.log" 2026-3-10-5:0:0
+"/var/log/wtmp" 2026-3-10-5:0:0
+"/var/log/snapper.log" 2026-3-10-5:0:0
+"/var/log/libvirt/qemu/archlinux.log" 2026-3-12-12:0:0
+"/var/log/btmp" 2026-3-10-5:0:0
+"/var/log/libvirt/qemu/Atrix.log" 2026-3-13-0:0:0
+"/var/log/samba/log.nmbd" 2026-3-15-21:49:32
+"/var/log/samba/fe80__b9b9_6c8d_8de4_4ab5.log" 2026-3-10-5:0:0
+"/var/log/libvirt/libvirtd.log" 2026-3-10-5:0:0
+"/var/log/libvirt/qemu/*.log" 2026-3-10-5:0:0
+"/var/log/samba/192.168.122.80.log" 2026-3-12-12:0:0
+"/var/log/samba/192.168.122.234.log" 2026-3-13-0:0:0

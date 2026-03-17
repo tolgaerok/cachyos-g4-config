@@ -1,0 +1,23 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a device; this may
+# be used with UUID= as a more robust way to name devices that works even if
+# disks are added and removed. See fstab(5).
+#
+# <file system>             <mount point>  <type>  <options>  <dump>  <pass>
+UUID=9EF5-6F28                            /boot/efi      vfat    defaults,umask=0077 0 2
+UUID=d8e6149a-139e-476f-b6e2-91798312fff5 /              btrfs   subvol=/@,defaults,noatime,compress=zstd:1 0 0
+UUID=d8e6149a-139e-476f-b6e2-91798312fff5 /home          btrfs   subvol=/@home,defaults,noatime,compress=zstd:1 0 0
+UUID=d8e6149a-139e-476f-b6e2-91798312fff5 /root          btrfs   subvol=/@root,defaults,noatime,compress=zstd:1 0 0
+UUID=d8e6149a-139e-476f-b6e2-91798312fff5 /srv           btrfs   subvol=/@srv,defaults,noatime,compress=zstd:1 0 0
+UUID=d8e6149a-139e-476f-b6e2-91798312fff5 /var/cache     btrfs   subvol=/@cache,defaults,noatime,compress=zstd:1 0 0
+UUID=d8e6149a-139e-476f-b6e2-91798312fff5 /var/tmp       btrfs   subvol=/@tmp,defaults,noatime,compress=zstd:1 0 0
+UUID=d8e6149a-139e-476f-b6e2-91798312fff5 /var/log       btrfs   subvol=/@log,defaults,noatime,compress=zstd:1 0 0
+
+
+tmpfs                                     /tmp           tmpfs   defaults,noatime,mode=1777 0 0
+
+192.168.0.17:/RELATIONSHIPS  /mnt/nfs-Relationships  nfs rsize=131072,wsize=131072,tcp,vers=3,timeo=600,retrans=2,hard,intr,nocto,_netdev,x-systemd.automount,noauto,x-systemd.idle-timeout=600,x-systemd.device-timeout=30 0 0
+192.168.0.17:/techs                 /mnt/nfs-techs          nfs rsize=131072,wsize=131072,tcp,vers=3,timeo=600,retrans=2,hard,intr,nocto,_netdev,x-systemd.automount,noauto,x-systemd.idle-timeout=600,x-systemd.device-timeout=5 0 0
+192.168.0.17:/LINUXTWEAKS           /mnt/nfs-linuxtweaks    nfs rsize=131072,wsize=131072,tcp,vers=3,timeo=600,retrans=2,hard,intr,nocto,_netdev,x-systemd.automount,noauto,x-systemd.idle-timeout=600,x-systemd.device-timeout=5 0 0
+192.168.0.17:/Public                /mnt/nfs-public         nfs rsize=131072,wsize=131072,tcp,vers=3,timeo=600,retrans=2,hard,intr,nocto,_netdev,x-systemd.automount,noauto,x-systemd.idle-timeout=600,x-systemd.device-timeout=5 0 0
